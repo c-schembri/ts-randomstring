@@ -1,7 +1,7 @@
 {
   "name": "ts-randomstring",
-  "version": "1.0.2",
-  "description": "TypeScript Random String",
+  "version": "1.0.3",
+  "description": "A library used for generating random strings, written in TypeScript and based on Node. ",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
   "scripts": {
