@@ -6,13 +6,21 @@
   "types": "lib/index.d.ts",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "tsc"
+    "build": "tsc",
+    "prepare": "npm run build",
+    "version": "git add -A src",
+    "postversion": "git push && git push --tags"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/doubletruth/ts-randomstring.git"
   },
-  "keywords": ["TypeScript", "Node", "Random String", "Crypto"],
+  "keywords": [
+    "TypeScript",
+    "Node",
+    "Random String",
+    "Crypto"
+  ],
   "author": "doubletruth",
   "license": "ISC",
   "bugs": {
@@ -21,6 +29,11 @@
   "homepage": "https://github.com/doubletruth/ts-randomstring#readme",
   "devDependencies": {
     "typescript": "^4.3.5"
-  }, 
-  "files": ["lib/**/*"]
+  },
+  "files": [
+    "lib/**/*"
+  ],
+  "dependencies": {
+    "@types/node": "^16.3.1"
+  }
 }
