@@ -42,6 +42,52 @@ interface GeneratedStringState {
 }
 
 /**
+ * Generates and returns a random string.
+ * The optional random string options define the nature of the string to generated.
+ * 
+ * This method instantiates a new `RandomString` class before executing `generate`.
+ * For multiple string generations, it is recommended to instantiate a `RandomString` instance yourself.
+ * 
+ * @param options  The random string options to parse and apply to string generation.
+ *      Supported options:
+ *      ```
+ *          length:                        number (default=32)
+ *          charSetType:                   CharacterSetType (default=CharacterSetType.Alphanumeric)
+ *          capitalisation/capitalization: Capitalisation/Capitalization (default=Capitalisation.Mixed)
+ *      ```
+ * @returns The randomly generated string.
+ */
+export
+const generateRandomString = (options?: RandomStringOptions): string => {
+    const randomString = new RandomString();
+    return randomString.generate(options);
+}
+
+/**
+ * Asynchronously generates a random string, executing the passed callback when generation is complete which contains the generated string.
+ * The optional random string options define the nature of the string to generated.
+ * 
+ * This method instantiates a new `RandomString` class before executing `generateAsync`.
+ * For multiple string generations, it is recommended to instantiate a `RandomString` instance yourself.
+ * 
+ * @param callback The callback (`error`, `generated`) to execute when generation is complete.
+ * @param options  The random string options to parse and apply to string generation.
+ *      Supported options:
+ *      ```
+ *          length:                        number (default=32)
+ *          charSetType:                   CharacterSetType (default=CharacterSetType.Alphanumeric)
+ *          capitalisation/capitalization: Capitalisation/Capitalization (default=Capitalisation.Mixed)
+ *      ```
+ * @returns void.
+ */
+export
+const generateRandomStringAsync = (callback: (error: Error | undefined, generated: string | undefined) => void, options?: RandomStringOptions): void => {
+    const randomString = new RandomString();
+    randomString.generateAsync(callback, options);
+}
+
+
+/**
  * The primary class for generating random strings.
  */
 export
