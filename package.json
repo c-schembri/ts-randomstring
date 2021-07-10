@@ -1,0 +1,26 @@
+{
+  "name": "ts-randomstring",
+  "version": "1.0.0",
+  "description": "TypeScript Random String",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/doubletruth/ts-randomstring.git"
+  },
+  "keywords": ["TypeScript", "Node", "Random String", "Crypto"],
+  "author": "doubletruth",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/doubletruth/ts-randomstring/issues"
+  },
+  "homepage": "https://github.com/doubletruth/ts-randomstring#readme",
+  "devDependencies": {
+    "typescript": "^4.3.5"
+  }, 
+  "files": ["lib/**/*"]
+}
