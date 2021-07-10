@@ -2,8 +2,8 @@
   "name": "ts-randomstring",
   "version": "1.0.3",
   "description": "A library used for generating random strings, written in TypeScript and based on Node. ",
-  "main": "lib/index.js",
-  "types": "lib/index.d.ts",
+  "main": "index.js",
+  "types": "index.d.ts",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "tsc",
