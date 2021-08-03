@@ -1,6 +1,6 @@
 {
   "name": "ts-randomstring",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "A library used for generating random strings, written in TypeScript and based on Node. ",
   "main": "index.js",
   "types": "index.d.ts",
@@ -22,7 +22,7 @@
     "Crypto"
   ],
   "author": "doubletruth",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/doubletruth/ts-randomstring/issues"
   },

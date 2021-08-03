@@ -29,7 +29,7 @@ import { generateRandomStringAsync } from "ts-randomstring/lib"
 // Asynchronously generate a random string via function and callback.
 generateRandomStringAsync((error, randomString) => {
     if (error === undefined) {
-        // Use your randomly generated string
+        // Use your randomly generated string.
         console.log(randomString);
     } else {
         // Handle error.
@@ -50,12 +50,12 @@ const rand = randomString.generate();
 ```
 import { RandomString } from "ts-randomstring/lib"
 
-// Asynchronously generate a random string via class method.
+// Asynchronously generate a random string via class method callback.
 const randomString = new RandomString();
-randomString.generateAsync((error, randomString) => {
+randomString.generateAsync((error, rand) => {
     if (error === undefined) {
-        // Use your randomly generated string
-        console.log(randomString);
+        // Use your randomly generated string.
+        console.log(rand);
     } else {
         // Handle error.
         console.log(error);
@@ -72,7 +72,7 @@ const randomString = generateRandomString({
 });
 ```
 ```
-import { generateRandomString } from "ts-randomstring/lib"
+import { generateRandomString, CharacterSetType } from "ts-randomstring/lib"
 
 // Setting length and character set.
 const randomString = generateRandomString({
@@ -81,7 +81,7 @@ const randomString = generateRandomString({
 });
 ```
 ```
-import { generateRandomString } from "ts-randomstring/lib"
+import { generateRandomString, CharacterSetType, Capitalisation } from "ts-randomstring/lib"
 
 // Setting length, character set, and capitalisation style.
 const randomString = generateRandomString({
