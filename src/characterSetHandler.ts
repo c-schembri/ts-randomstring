@@ -1,8 +1,7 @@
 /**
  * Enumerates through every supported character set type for random string generation.
  */
-export
-enum CharacterSetType {
+export enum CharacterSetType {
     Alphanumeric,
     Alphabetic,
     Numeric,
@@ -14,8 +13,7 @@ enum CharacterSetType {
 /**
  * Enumerates through every supported capitalisation style for random string generation.
  */
-export
-enum Capitalisation {
+export enum Capitalisation {
     Mixed,
     Uppercase,
     Lowercase
@@ -29,8 +27,7 @@ export { Capitalisation as Capitalization }
  * @param capitalisation  The character capitalisation style.
  * @returns Returns a string of unique characters which represent the character set.
  */
-export 
-const getCharacterSet = (charSetType: CharacterSetType, capitalisation: Capitalisation): string => {
+export const getCharacterSet = (charSetType: CharacterSetType, capitalisation: Capitalisation): string => {
     let charSet = "";
     const numbers = "0123456789";
     const charsLower = "abcdefghijklmnopqrstuvwxyz";

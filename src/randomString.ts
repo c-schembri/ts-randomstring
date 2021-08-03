@@ -12,16 +12,14 @@ interface RandomStringOptionsBase {
 /**
  * The interface for controlling the nature of random string generation (UK English).
  */
-export
-interface RandomStringOptions extends RandomStringOptionsBase {
+export interface RandomStringOptions extends RandomStringOptionsBase {
     capitalisation?: Capitalisation;
 }
 
 /**
  * The interface for controlling the nature of random string generation (US English).
  */
-export
-interface RandomStringOptions extends RandomStringOptionsBase {
+export interface RandomStringOptions extends RandomStringOptionsBase {
     capitalization?: Capitalization;
 }
 
@@ -57,8 +55,7 @@ interface GeneratedStringState {
  *      ```
  * @returns The randomly generated string.
  */
-export
-const generateRandomString = (options?: RandomStringOptions): string => {
+export const generateRandomString = (options?: RandomStringOptions): string => {
     const randomString = new RandomString();
     return randomString.generate(options);
 }
@@ -80,8 +77,7 @@ const generateRandomString = (options?: RandomStringOptions): string => {
  *      ```
  * @returns void.
  */
-export
-const generateRandomStringAsync = (callback: (error: Error | undefined, generated: string | undefined) => void, options?: RandomStringOptions): void => {
+export const generateRandomStringAsync = (callback: (error: Error | undefined, generated: string | undefined) => void, options?: RandomStringOptions): void => {
     const randomString = new RandomString();
     randomString.generateAsync(callback, options);
 }
@@ -90,8 +86,7 @@ const generateRandomStringAsync = (callback: (error: Error | undefined, generate
 /**
  * The primary class for generating random strings.
  */
-export
-class RandomString {
+export class RandomString {
     /**
      * Generates and returns a random string.
      * The optional random string options define the nature of the string to generated.
